@@ -1774,3 +1774,98 @@ html,body{
         grid-template-columns:1fr !important;
     }
 }
+/* ===== PORTFOLIO MODAL ===== */
+
+#portfolioModal .modal-dialog{
+    max-width: 900px;
+}
+
+#portfolioModal .modal-content{
+    background: #0f172a;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+#portfolioModal .modal-header{
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 18px 24px;
+}
+
+#modalTitle{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#portfolioModal .btn-close{
+    filter: invert(1);
+}
+
+#portfolioModal .modal-body{
+    padding: 20px;
+    background: #0f172a;
+}
+
+/* Image Container */
+#modalImage{
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: #1e293b;
+    padding: 10px;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+
+    #portfolioModal .modal-dialog{
+        max-width: 95%;
+    }
+
+    #modalImage{
+        max-height: 65vh;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    #portfolioModal .modal-dialog{
+        margin: 10px;
+    }
+
+    #portfolioModal .modal-header{
+        padding: 15px;
+    }
+
+    #portfolioModal .modal-body{
+        padding: 15px;
+    }
+
+    #modalTitle{
+        font-size: 1rem;
+    }
+
+    #modalImage{
+        max-height: 50vh;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    #modalImage{
+        max-height: 40vh;
+    }
+
+    #modalTitle{
+        font-size: .9rem;
+    }
+
+}
